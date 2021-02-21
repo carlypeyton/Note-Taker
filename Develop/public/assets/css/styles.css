@@ -4,9 +4,9 @@ html, body {
   padding: 0;
 }
 
-.save-note {
+/* .save-note {
   display: none;
-}
+} */
 
 .icons i {
   margin-left: 15px;
@@ -15,23 +15,31 @@ html, body {
   cursor: pointer;
 }
 
+.icons i:hover {
+  font-size: 1.95rem;
+  transition: .25s ease-out;
+}
+
 .note-textarea, .note-title {
-  color: #000000;
+  color: black;
   width: 100%;
   outline: none;
   border: none;
+  font-family: 'Lato', sans-serif;
 }
 
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  font-size: 1.15rem;
+  margin-left: 2px;
 }
 
 .note-title {
   height: 50px;
-  margin-top: 13px;
-  font-size: 3rem;
+  margin-top: 20px;
+  font-size: 2.15rem;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -67,4 +75,36 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
 }
+
+.navbar-brand {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-image: url("https://www.itl.cat/pngfile/big/3-36879_night-sky-wallpaper-high-resolution-night-wallpaper-hd.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;}
+
+.display-4 {
+  font-size: 9rem;
+}
+
+.btn {
+font-size: 2rem;
+color: black;
+}
+
+.btn :hover {
+  color: gray;
+}
+
