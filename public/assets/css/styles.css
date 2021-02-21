@@ -4,20 +4,15 @@ html, body {
   padding: 0;
 }
 
-/* .save-note {
+.save-note {
   display: none;
-} */
+}
 
 .icons i {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   cursor: pointer;
-}
-
-.icons i:hover {
-  font-size: 1.95rem;
-  transition: .25s ease-out;
 }
 
 .note-textarea, .note-title {
