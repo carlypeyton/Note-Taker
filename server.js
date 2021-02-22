@@ -1,8 +1,8 @@
 //////////////////NODE MODULES///////////////////
 
 const express = require("express");
-// const fs = require("fs");
-// const path = require("path");
+const fs = require("fs");
+const path = require("path");
 
 ///////////////EXPRESS CONFIGURATION///////////////
 
@@ -11,8 +11,7 @@ const app = express();
 //Set initial port
 const PORT = process.env.PORT || 3000;
 //Set express app to handle data parsing
-app.use(express.static("./"));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -26,3 +25,4 @@ require("./routes/htmlroutes")(app);
 app.listen(PORT, () => {
     console.log("App listening on PORT: " + PORT);
 });
+
