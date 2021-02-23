@@ -32,7 +32,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Deployed Application
 * https://github.com/carlypeyton/Note-Taker
-*
+* https://enigmatic-taiga-56084.herokuapp.com/
 
 <img src = "public/assets/images/main-screen.png">
 
