@@ -60,19 +60,19 @@ const handleNoteSave = () => {
   });
 };
 
-// Delete the clicked note
-const handleNoteDelete = function(event) {
-  // prevents the click listener for the list from being called when the button inside of it is clicked
-  event.stopPropagation();
-  const note = $(this).parent(".list-group-item").data();
-  if (activeNote.id === note.id) {
-    activeNote = {};
-  }
-  deleteNote(note.id).then(() => {
-    getAndRenderNotes();
-    renderActiveNote();
-  });
-};
+// // Delete the clicked note
+// const handleNoteDelete = function(event) {
+//   // prevents the click listener for the list from being called when the button inside of it is clicked
+//   event.stopPropagation();
+//   const note = $(this).parent(".list-group-item").data();
+//   if (activeNote.id === note.id) {
+//     activeNote = {};
+//   }
+//   deleteNote(note.id).then(() => {
+//     getAndRenderNotes();
+//     renderActiveNote();
+//   });
+// };
 
 // Sets the activeNote and displays it
 const handleNoteView = function() {
@@ -131,24 +131,10 @@ const getAndRenderNotes = () => {
 saveNoteBtn.on("click", handleNoteSave);
 noteList.on("click", ".list-group-item", handleNoteView);
 newNoteBtn.on("click", handleNewNoteView);
-noteList.on("click", ".delete-note", handleNoteDelete);
+// noteList.on("click", ".delete-note", handleNoteDelete);
 noteTitle.on("keyup", handleRenderSaveBtn);
 noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
