@@ -24,7 +24,7 @@ module.exports = function (app) {
         //Write file
         fs.writeFileSync('./db/db.json', JSON.stringify(notesList));
         //Send notes list to browser
-        res.json(notesList);
+        res.send(notesList);
         console.log("Note saved!")
     });
 };
